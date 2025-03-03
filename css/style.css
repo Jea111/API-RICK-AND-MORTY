@@ -1,0 +1,101 @@
+/* Estilos por defecto para el modo claro (light mode) */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Fondo claro para el modo claro */
+  color: #333; /* Texto oscuro para el modo claro */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h1 {
+  color: #444;
+  margin: 30px 0;
+}
+
+#personajes,
+#episode {
+  width: 80%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.personaje,
+.episode {
+  background-color: #fff; /* Fondo blanco para las tarjetas en modo claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+.personaje img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+h4 {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Estilos para el modo oscuro (dark mode) */
+body.dark-mode {
+  background-color: #121212; /* Fondo oscuro para el modo oscuro */
+  color: #e0e0e0; /* Texto claro para el modo oscuro */
+}
+
+body.dark-mode h1 {
+  color: #fff; /* Título blanco para el modo oscuro */
+}
+
+body.dark-mode #personajes,
+body.dark-mode #episode {
+  background-color: #333; /* Fondo oscuro para los contenedores */
+}
+
+body.dark-mode .personaje,
+body.dark-mode .episode {
+  background-color: #2c2c2c; /* Fondo oscuro para las tarjetas */
+  border: 1px solid #444; /* Borde oscuro para las tarjetas */
+}
+
+body.dark-mode .personaje img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+body.dark-mode h2 {
+  color: #fff; /* Títulos blancos en el modo oscuro */
+}
+
+body.dark-mode h4 {
+  color: #bbb; /* Subtítulos claros en el modo oscuro */
+}
+
+/* Estilos para el botón */
+#theme-toggle {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background-color: #357abd;
+}
